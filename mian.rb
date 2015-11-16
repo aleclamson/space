@@ -3,6 +3,7 @@ require 'Gosu'
 class SimWindow < Gosu::Window
 
 G = 6.67408e-11
+#$data =File.read("")
 
 	def initialize
 		super 640, 640
@@ -13,12 +14,12 @@ G = 6.67408e-11
 	end
 
 	def update
-		@planets.push(Planet.new)
+		#@planets.push(Planet.new)
 	end
 
 	def draw
 		@background_image.draw(0,0,0)
-		@planet.each { |planet| planet.draw}
+		#@planet.each { |planet| planet.draw}
 	end
 
 	def button_down(id)
